@@ -1,0 +1,897 @@
+@charset "utf-8";
+
+div.contents{
+	padding: 30px 0 100px 0;
+}
+div.contents div.wrapper {
+    padding-bottom: 0px;
+}
+
+/*----------------------------------------------------------------------
+/			slider common style
+/----------------------------------------------------------------------*/
+.bx-wrapper .bx-viewport {
+	border:none;
+	left:0;
+	background:transparent;
+	box-shadow: none;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+	width:15px;
+	height:15px;
+	border-radius: 15px;	
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	behavior: url(/css/PIE.htc);
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a {
+	background:#ffffff !important;
+	opacity: 0.3;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
+	background:#ffcc00 !important;
+	opacity: 1;
+}
+.bx-wrapper .bx-controls-direction a {
+    width: 53px;
+    height: 44px;
+    margin-top:-22px;;
+}
+.bx-wrapper .bx-prev,
+.bx-wrapper .bx-next {
+    background-image: url("/images/top/controls_pandemika.png") ;
+}
+
+.bx-wrapper .bx-pager {
+	bottom: -40px;
+}
+
+.bx-wrapper .bx-next:hover{
+    background-position:-40px 0px;
+}
+.bx-wrapper .bx-controls-direction a.bx-prev{
+   left:-63px;
+   background-position: 0 0 ;
+}
+.bx-wrapper .bx-controls-direction a.bx-next{
+   right:-63px;
+   background-position: -53px 0 ;
+}
+.bx-wrapper .bx-controls-direction a.bx-prev:hover{
+   background-position: 0 -44px ;
+}
+.bx-wrapper .bx-controls-direction a.bx-next:hover{
+   background-position: -53px -44px ;
+}
+
+
+
+/*----------------------------------------------------------------------
+/			header
+/----------------------------------------------------------------------*/
+div#header{
+	width:100%;
+	height:660px;
+	background-color:#000;
+	margin:0;
+	overflow:hidden;
+}
+div#header div#headerimg{
+
+	height:699px;
+	background:url(/images/top/head_image.jpg) no-repeat 50% top;
+
+}
+div#header div.wrapper #info{
+	width:279px;
+	height:638px;
+	position:absolute;
+	top:18px;
+	right:0;
+}
+div#header div.wrapper img#logo{
+	display:block;
+	position:absolute;
+	top:397px;
+	left:10px;
+}
+div#header div#headerimg div.wrapper{
+	width:;
+	height:662px;
+}
+div#header #info  ul#sns{
+
+}
+div#header #info div#news{
+	width:254px;
+	height:200px;
+	margin:0 0 5px 0;
+	padding:50px 12px 0px;
+	background:url(/images/top/bg_news.png) no-repeat 50% top;
+}
+div#header #info div#news div#newslist{
+	background-color:#ffffff;
+	border:1px solid #ddd;
+	height:170px;
+	overflow:auto;
+	padding:7px 3px 7px 7px;
+	font-size: 85%;
+	line-height: 140%;
+}
+
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color:#3939bc;
+}
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar, .mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar, .mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar, .mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background-color:#b84577;
+}
+.mCSB_inside > .mCSB_container {
+    margin-right:20px;
+}
+
+div#header #info div#news div#newslist li{
+	border-bottom:1px dotted #ccc;
+	padding:3px 0 5px 0;
+}
+div#header #info div#news div#newslist li div.date{
+	margin-bottom:2px;
+	color: #695fcf;
+}
+div#header #info div#news div#newslist li a{
+	color: #333;
+}
+div#header #info div#news div#newslist li a:hover{
+	color: #695fcf;
+}
+div#header #info  div#pv{
+	width:255px;
+	height:145px;
+	margin: 0 0 5px;
+	padding:50px 12px 12px;
+	background:url(/images/top/bg_pv.png) no-repeat 50% top;
+	position:relative;
+}
+div#header #info  div#pv div.thumb {
+	width:254px;
+	height: 140px;
+	overflow:hidden;
+}
+div#header #info  div#pv div.thumb img.capture{
+	width: 254px;
+	display:block;
+	margin: 0px auto 0 auto;
+}
+div#header #info  div#pv img#button{
+	position:absolute;
+	top: 50%;
+	left:50%;
+	margin-top:-4px;
+	margin-left:-26px;
+}
+
+/*----------------------------------------------------------------------
+/			navi
+/----------------------------------------------------------------------*/
+div#navi{
+	position:static;
+}
+div#navi ul li{
+	float:left;
+	width:302px;
+	margin:0 5px;
+}
+
+
+/*----------------------------------------------------------------------
+/			infomation
+/----------------------------------------------------------------------*/
+
+#infoBanner{
+	margin:0;
+	padding:0;
+}
+
+#infoBanner li{
+	padding:0;
+}
+#infoBanner li img{
+	margin:0;
+	display:block;
+	width:100%;
+	display:none
+}
+#infoBanner .bx-wrapper .bx-viewport {
+	border:none;
+	left:0;
+	background:transparent;
+	box-shadow: none;
+}
+
+
+#information{
+	background:url(/images/top/event_bg.jpg) repeat-x 50% top;
+	background-size: cover;
+	margin:0 0 0px 0;
+	padding:5px 0 20px 0;
+}
+#information h2{
+	margin:0 0 0px 0;
+	text-align:center;
+}
+
+#information div.bx-wrapper {
+    margin: 0 auto 30px;
+}
+
+#information ul#DL li#appStore{
+	background:url(/images/top/b_appstore.png) no-repeat 0 0;
+}
+#information ul#DL li#googlePlay{
+	background:url(/images/top/b_googleplay.png) no-repeat 0 0;
+}
+
+
+/*----------------------------------------------------------------------
+/			story
+/----------------------------------------------------------------------*/
+
+#story{
+	padding-top:0px;
+}
+#story div.wrapper{
+	margin-bottom:0;
+	padding-bottom:0;
+}
+#story .bx-wrapper{
+	margin:0 auto;
+}
+
+#story div.box_inner{
+	min-height: 500px;
+}
+#story #eKojyo{
+	position:absolute;
+	top: -40px;
+	right: -30px;
+}
+
+
+/*----------------------------------------------------------------------
+/			game
+/----------------------------------------------------------------------*/
+
+#gameinfo{
+	height:auto;
+}
+#gameinfo div.box_inner{
+	padding-bottom:0;
+}
+#gameinfo img#game_sub_t{
+	position:absolute;
+	top: 30px;
+	right:30px;
+}
+#gameinfo div.subTitle{
+	position:absolute;
+	top:29px;
+	right:20px;
+	height:46px;
+	width:633px;
+}
+#gameinfo h3{
+	margin-bottom:0;
+	padding:0;
+}
+#gameinfo h3 img{
+	display:block;
+}
+ul#gameSlider {
+	padding:0;
+	margin:0;
+}
+#gameSlider li{
+	padding:0;
+	/*
+	border:8px solid #fff;
+	border-radius: 6px;	
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	behavior: url(/css/PIE.htc);
+	*/
+	border:none;
+}
+#gameSlider li img{
+	margin:0px;
+	display:block;
+	width:100%;
+	display: none;
+	
+}
+#gameinfo .bx-wrapper {
+	margin-bottom: 50px;
+}
+
+
+#gameinfo img#roll_info{
+	width:977px;
+	margin-left:-50px;
+	margin-top:-20px;
+}
+
+/*----------------------------------------------------------------------
+/			chara
+/----------------------------------------------------------------------*/
+
+#charainfo{
+	height:auto;
+}
+#charainfo #rareCharacter{
+	padding: 20px 0;
+}
+#charainfo area{
+	background:#000;
+}
+#rareCharacter img{
+	width:905px;
+}
+#charainfo ul.characterList li{
+	margin: 0 10px 20px 10px;
+	float:left;
+	width:267px;
+}
+
+
+#charainfo ul.characterList li img{
+	display:block;
+}
+#charainfo div.characterDetail{
+	display:none;
+	
+}
+#charainfo h3{
+	text-align:center;
+	padding: 20px 0 0 0;
+	margin:0;
+}
+
+
+div.characterDetail{
+	padding:0px;
+	clear:left;
+	background:red;
+	background:url(/images/top/character/bg_rokkaku.png) no-repeat right top;
+}
+div.characterDetail div.dChara{
+	width:250px;
+	float: left;
+	text-align:center;
+	padding-top:10px;
+}
+div.characterDetail div.dChara img{
+	height:420px;
+	display:block;
+	padding:20px 0;
+	margin: 0 auto;
+}
+div.characterDetail div.dDetail{
+	width:420px;
+	float: right;
+	padding:20px 30px  ;
+	line-height: 145%;
+	color:#fff;
+	font-size:125%;
+}
+div.characterDetail div.dDetail dl.skill dt,
+div.characterDetail div.dDetail dl.skill dd{
+	display:inline;
+}
+div.characterDetail div.dDetail h2{
+	color:#04dfff;
+	font-size:200%;
+	line-height: 140%;
+	font-weight:normal;
+	margin:0;
+	padding:0;
+}
+
+div.characterDetail div.dDetail p{
+	margin-bottom:30px;
+}
+div.characterDetail div.dDetail span.kana{
+	display:block;
+	font-weight:normal;
+	font-size:70%;
+	padding: 0px 0 0 0;
+	color:#04dfff;
+}
+div.characterDetail div.dDetail div.title{
+	margin-bottom:25px;
+}
+
+div.characterDetail div.dDetail dl.favorite dt{
+	font-weight:bold;
+	color:#92168e;
+	font-size:105%;
+	margin-bottom:3px;
+}
+
+div.characterDetail div.characterInfo{
+	border:8px groove #92168e;
+	overflow: hidden;
+	position: relative;
+	zoom:1;
+}
+#fancybox-overlay{
+	z-index:50000;
+}
+#fancybox-wrap{
+	z-index:50001;
+}
+#fancybox-content{
+	border-color:#4824bd
+}
+
+/*----------------------------------------------------------------------
+/			shiyo
+/----------------------------------------------------------------------*/
+
+#announce div.wrapper{
+	background:url(/images/common/shadow.png);
+	border:1px solid #000;
+	color:#fff;
+	font-size:90%;
+	line-height: 150%;
+}
+#announce div.wrappInner{
+	padding:30px;
+}
+#announce div.wrappInner div.leftSection{
+	float:left;
+	width: 194px;
+}
+#announce div.wrappInner div.rightSection{
+	float:right;
+	width:660px;;
+}
+#announce div.wrappInner div.rightSection a img{
+	width: 100%;
+}
+#announce div.wrappInner dl{
+	margin-bottom: 15px;
+}
+#announce div.wrappInner dt{
+	margin:0 0 10px 0;
+	font-weight:bold;
+	font-size: 110%;
+	font-weight: bold;
+}
+#announce div.wrappInner dd{
+	margin-bottom :15px;
+	padding-left:20px;
+	color:#ccc;
+}
+#announce div.wrappInner dd:last-child{
+	margin-bottom: 0;
+}
+#announce table th{
+	font-weight:normal;
+}
+#announce p{
+	margin-left:1em;
+}
+
+#announce #DL li:first-child {
+	margin-bottom: 15px;
+}
+#announce #DL li img{
+	width:100%;
+	display:block;
+}
+#announce #contactFormButton{
+	padding: 10px 20px;
+	margin:0 ;
+	display:block;
+	width:70%;
+}
+
+/*----------------------------------------------------------------------
+/			media
+/----------------------------------------------------------------------*/
+/*	
+	iPad & iPhone common
+*/
+@media screen and (max-width: 991px) {
+
+
+}
+
+/*
+	iPhone-480px
+@media screen and (max-width:767px) {
+}
+*/
+
+
+@media screen and (max-width:767px) {
+	body{
+		background-attachment:fixed !important;
+		background-position: 0 0 !important;
+	}
+	div.contents{
+		padding: 0;
+	}
+	div#navi{
+		margin-bottom:0 !important;
+		position:absolute;
+		top:0px;
+	}
+	div#navi ul li:last-child{
+		margin-bottom: 0 !important;
+	}
+	div#navi ul li#naviStory a, div#navi ul li#naviGeme a, div#navi ul li#naviChara a {
+	    	
+	}
+	div.contents div.wrapper{
+		border-color:#4824bd;
+		border-radius: 0px;        
+		-webkit-border-radius: 0px;   
+		-moz-border-radius: 0px; 
+		border:8px groove #4824bd;
+	}
+	.bx-wrapper .bx-pager.bx-default-pager a {
+		width:8px;
+		height:8px;
+		border-radius: 8px;	
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		behavior: url(/css/PIE.htc);
+	}
+	
+	
+	#story img#storyCopy {
+		width:90%;
+		padding: 1em;
+	}
+	#story img#eKojyo {
+		display:none;
+	}
+	
+	#story div.box_inner {
+	    min-height: 0px;
+	}
+	div.bx-controls-direction{
+		display: none;
+	}
+	#gameinfo h3{
+		margin-bottom:0px;
+		padding:0;
+	}
+	#gameinfo h3 img{
+		width:100%;
+	}
+	div.box_frame h2{
+		height: auto;
+	}
+	#gameinfo img#game_sub_t{
+		position: static;
+		width:100%;
+	}
+	#gameinfo img#roll_info{
+		width:110%;
+		margin:0 0 0 -5%;
+	}
+	#gameinfo img#gameDetailCapture{
+		width: 100%;
+	}
+	
+	
+	
+	/* top box*/
+	div.box_frame{
+		background:none;
+		
+	}
+	div.box_bottom{
+		background:none;
+	}
+	div.box_inner{
+		padding:12px 12px 0 12px;
+	}
+	div.box_frame h2{
+		background:transparent;
+		border:none;
+		padding:0;
+		margin: 0 0 10px 0;
+	}
+	div.box_frame h2 img{
+		height:30px;
+	}
+	div.box_p{
+		padding: 0px;
+	}
+	
+	div#header div.wrapper img#logo{
+		position: static;
+		width:90%;
+		display:block;
+		margin:0 auto ;
+		padding:180px 0 40px
+	}
+	div#header div#headerimg div.wrapper{
+		height: auto;
+	}
+	div#header {
+		height: auto;
+	}
+	div#header div#headerimg{
+		background-size:290%;
+		background-position: 38% -20px;
+		height: auto;
+	}
+	div#header div.wrapper #info{
+		float:none;
+		position:static;
+		height: auto;
+		width:auto;
+	}
+	div#header #info ul#sns {
+		background:#000;
+		padding:10px;
+		margin-bottom:0;
+	}
+	div#header #info div#news{
+		width:auto;
+		background: none;
+		height:auto;
+		margin:0;
+		padding:0;
+	}
+	
+	div#header #info div#news div#newslist{
+		height:200px;
+		padding: 5px;
+		background:transparent url(/images/common/bg_news.png);
+		background-size:cover;
+		border: none;
+		font-size:70%;
+	}
+	div#header #info div#news div#newslist li a{
+		color:#ccc;
+	}
+	
+	div#header #info div#news div#newslist li {
+		padding: 2px 0;
+		border-color:#5d429f;
+	}
+	div#header #info div#news div#newslist li:last-child {
+		padding-bottom:0;
+		border:none;
+	}
+	div#header #info div#pv{
+		height:auto;
+		width: auto;
+		background: none;
+		padding:0px;
+		background:transparent url(/images/common/bg_news.png);
+		background-size:cover;
+		background-position: 50% 50%;
+		text-align: center;
+		margin-bottom: 0;
+	}
+	/*
+	div#pv{
+		border-bottom:1px solid #7dbcda;
+	}
+	*/
+	div#news div.title,
+	div#pv div.title{
+
+background: #1d1c66; /* Old browsers */
+background: -moz-linear-gradient(top, #1d1c66 0%, #2c539e 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1d1c66), color-stop(100%,#2c539e)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #1d1c66 0%,#2c539e 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #1d1c66 0%,#2c539e 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #1d1c66 0%,#2c539e 100%); /* IE10+ */
+background: linear-gradient(to bottom, #1d1c66 0%,#2c539e 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d1c66', endColorstr='#2c539e',GradientType=0 ); /* IE6-9 */
+
+		text-align:left;
+		padding:12px 10px 10px 10px;
+		
+		line-height:100%;
+		border-top:1px solid #2b4e99;
+	}
+	div#news div.title{
+		color:#00e7fb;
+	}
+	div#pv div.title{
+		color:#00e7fb;	
+	}
+	div#header #info div#pv div.thumb{
+		margin:10px auto 0;
+		padding-bottom: 5px;
+		height:auto;
+		width:auto;
+		overflow:visible;
+	}
+	div#header #info div#pv div.thumb iframe{
+		width:80%;
+		height:auto;
+	}
+	div#pv a{
+		display:block;
+		padding:10px;
+		
+	}
+	div#pv a img{
+		display:block;
+		margin:0 auto;
+	}
+	
+	div#header #info .Transferdata {
+		width: 100%;
+		background:#000;
+		border-bottom:1px solid #7dbcda;
+		padding: 15px 0;
+		line-height: 1;
+		text-align: center;
+	}
+	div#header #info .Transferdata a{
+		width: 100%;
+	}
+	div#header #info .Transferdata img{
+		width: 70%;
+		height: auto;
+	}
+
+	div#header #info .Mainteinfo {
+		width: 100%;
+		padding: 5px 0;
+		text-align: center;
+	}
+
+
+
+	#information {
+	    padding: 5px 0 10px;
+	    background-size:cover;
+	    
+	}
+	
+	
+	#charainfo div.box_inner{
+		padding-bottom:0;
+	}
+	#charainfo ul.characterList li{
+		width:46%;
+		margin: 0 2% 4% 2%;
+	}
+	#charainfo ul.characterList li img{
+		width:100%;
+	}
+	#charainfo h3{
+		padding: 0;
+	}
+	#charainfo h3 img{
+		width: 96%;
+		padding:0;
+	}
+	#charainfo #rareCharacter {
+	    padding: 10px 0;
+	}
+	#story {
+	    padding-top: 15px;
+	}
+	#information h2{
+		text-align:center;
+	}
+	#information h2 img{
+		width: 80%;
+		margin: 0 auto;
+	}
+	#charainfo{
+	}
+	#charainfo #rareCharacter img{
+		width:100%;
+	}
+	div.characterDetail{
+		font-size:80%;
+	}
+	div.characterDetail div.dChara{
+		width:auto;
+		float: none;
+		padding:0;
+	}
+	div.characterDetail div.dDetail div.title {
+	    margin-bottom: 10px;
+	}
+	div.characterDetail div.dChara img{
+		height:250px;
+		padding:10px 0;
+		display:block;
+	}
+	div.characterDetail div.dDetail{
+		width:auto;
+		float: none;
+		padding: 0 8px 10px 8px;
+	}
+	
+	
+
+	#announce div.wrappInner {
+		padding:12px 12px 12px 12px;
+		font-size:90%;
+		line-height: 140%;
+	}
+	
+	#announce div.wrappInner div.leftSection,
+	#announce div.wrappInner div.rightSection{
+		width:auto;
+		float:none;
+	}
+	#announce div.wrappInner div.leftSection{
+		margin: 0 0 20px 0;
+	}
+	#announce #DL{
+		width:auto;
+	}
+	#announce #DL li{
+		text-align: center;
+		width:49%;
+		float:left;
+		margin-left:2%;
+	}
+	#announce #DL li:first-child{
+		margin:0;
+	}
+	#announce th{
+		white-space:nowrap;
+	}
+	#announce td{
+		padding:0;
+	}
+	#announce #contactFormButton{
+		margin:0 auto;
+	}
+	
+	#test{
+		width:100%;
+	}
+}
+
+/*0708 mo*/
+#storyCopy{
+	padding:2em 0 0 3em;
+}
+.nonborder {
+  border:none;
+  outline:none;
+}
+.Transferdata{
+	width: 273px;
+	margin: 0 auto;
+	padding: 5px 0 0;
+}
+.Mainteinfo{
+	width: 253px;
+	height: 70px;
+	margin: 0 auto 5px auto;
+	padding: 5px 10px;
+	background: rgba(0,64,255, .3);
+	border: 1px solid #8400E5;
+	text-align: center;
+
+}
+.Mainteinfo a{
+	color: #fff !important;
+	text-shadow: 1px 1px 1px #000;
+}
+.Mainteinfo a:hover{
+	text-decoration: underline!important;
+}
+.Mainteinfo .attention{
+	padding: 5px 0 0;
+	font-size: 80% !important;
+	color: #E6D4F7 !important;
+	line-height: 120% !important;
+}
